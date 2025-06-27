@@ -1,133 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-
-    :root {
-      --yellow: hsl(47, 88%, 63%);
-      --white: hsl(0, 0%, 100%);
-      --gray500: hsl(0, 0%, 42%);
-      --gray950: hsl(0, 0%, 7%);
-      --blue: hsl(228, 45%, 44%);
-    }
-
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a {color: var(--blue)}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
 
 
-    body{
-      font-family: 'Figtree', sans-serif;
-      margin: 0;
-      padding: 0;
-      align-items: center;
-      background-color: var(--yellow);
-      color:  var(--gray950);
-    }
+    <title>Frontend Mentor | Blog preview card</title>
 
-    h1 {
-      font-size: 24px;
-      font-weight: 800;
-      line-height: 150%;
-      margin: 0;
-    }
-    .content-text {
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 150%;
-      color: var(--gray500);
-    }
-    .card {
-      max-width: 350px;
-      margin: 0 auto;
-      padding: 24px;
-      display: flex;
-      gap: 24px;
-      flex-direction: column;
-      background-color: var(--white);
-      border-radius: 20px;
-      box-shadow: 8px 8px 0 var(--gray950);
-      border: 1px solid var(--gray950);
-      overflow: hidden;
-    }
-    .blog-image img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-    .card-content {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .category {
-      font-size: 14px;
-      font-weight: 800;
-      line-height: 150%;
-      color: hsl(0, 0%, 7%);
-      background-color: var(--yellow);
-      padding: 4px 8px;
-      border-radius: 8px;
-      align-self: flex-start; /* Keeps width hugging content within flex parent */
-      display: inline-block;
-    }
-    .date {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--gray950);
-      margin-bottom: 4px;
-    }
-    .author {
-      display: flex;
-      align-items: center;
-      font-size: 14px;
-      font-weight: 800;
-      line-height: 150%;
-      color: hsl(0, 0%, 7%);
-    }
-    .author-avatar {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      margin-right: 8px;
-    }
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <!-- The "layout" class is used to apply general layout styling for the page -->
+  <body class="layout">
+    <div class="card">
+      <div class="blog-image">
+        <img
+          src="./assets/images/illustration-article.svg"
+          alt="Illustration article"
+        />
+      </div>
 
-  </style>
-</head>
-<body>
-<div class="card">
-  <div class="blog-image"><img src="./assets/images/illustration-article.svg" alt="Illustration article"></div>
-  
-  <div class="card-content">
-  <div class = "category">Learning</div>
+      <div class="card-content">
 
-  <div class = "date">Published 21 Dec 2023</div>
+        <div class="category">Learning</div>
 
-  <h1>HTML & CSS foundations</h1>
-  <p class = "content-text">These languages are the backbone of every website, defining structure, content, and presentation.
-  </p>
+        <div class="date">Published 21 Dec 2023</div>
 
-  </div>
-  
-  <div class="author">
-    <img src="./assets/images/image-avatar.webp" alt="Author's avatar" class="author-avatar">
-    Greg Hooper
-  </div>
-  
-  <footer>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  </footer>
-</body>
+        <h1>HTML & CSS foundations</h1>
+
+        <p class="content-text">
+          These languages are the backbone of every website,
+          defining structure, content, and presentation.
+        </p>
+      </div>
+
+      <div class="author">
+        <img
+          src="./assets/images/image-avatar.webp"
+          onerror="this.onerror=null; this.src='./assets/images/default-avatar.png';"
+          class="author-avatar"
+        />
+        Greg Hooper
+      </div>
+    </div>
+
+    <!-- This footer provides attribution for the Frontend Mentor challenge -->
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Lucas Ryan</a>.
+    </footer>
+  </body>
 </html>
