@@ -22,6 +22,7 @@ body {
   color: var(--gray950);
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 95vh;
   margin-top: 5vh;
 }
@@ -41,7 +42,7 @@ footer {
 
 .card {
   max-width: 336px;
-  margin: 0 auto;
+  margin: 24px;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -103,6 +104,11 @@ h1 {
   font-weight: 800;
   line-height: 150%;
   margin: 0;
+}
+
+h1:hover {
+  color: var(--yellow);
+  cursor: pointer;
 }
 .content-text {
   font-weight: 400;
