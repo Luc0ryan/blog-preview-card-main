@@ -85,7 +85,7 @@ padding: 0.5rem 0;               /* reduce vertical space */
   display: inline-block;
 }
 .date {
-  font-size: 0.875rem;
+  font-size: clamp(0.75rem, 1.7vw, 0.875rem);
   font-weight: 500;
 }
 .author {
@@ -102,7 +102,7 @@ padding: 0.5rem 0;               /* reduce vertical space */
   margin-right: 0.5rem;
 }
 h1 {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
   font-weight: 800;
   margin: 0;
   transition: color 0.3s ease;
@@ -116,4 +116,5 @@ h1:hover {
   font-weight: 400;
   color: var(--gray500);
   margin: 0;
+  font-size: clamp(0.875rem, 2vw, 1rem);
 }
